@@ -1,0 +1,28 @@
+# Neo4j connection
+neo4j:
+  uri: bolt://localhost:7687
+  user: neo4j
+  password: changeme
+
+# Embedding provider: "openai" or "ollama"
+embedding:
+  provider: openai
+
+  openai:
+    api_key: ${OPENAI_API_KEY}
+    model: text-embedding-3-small
+    dimensions: 1536
+
+  ollama:
+    base_url: https://ollama.aga.my
+    model: nomic-embed-text
+    dimensions: 768
+
+# Vector index settings
+index:
+  name: memory_embeddings
+  label: Memory
+  property: embedding
+  similarity: cosine
+  top_k: 5
+  min_score: 0.6
