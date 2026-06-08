@@ -74,7 +74,7 @@ def cmd_delete(args):
 
 
 def main():
-    load_dotenv()
+    load_dotenv(override=True)
 
     parser = argparse.ArgumentParser(
         prog="recall",

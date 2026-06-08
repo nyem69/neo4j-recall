@@ -50,7 +50,7 @@ def setup(uri: str, user: str, password: str, provider: str | None = None):
 
 
 if __name__ == "__main__":
-    load_dotenv()
+    load_dotenv(override=True)
     setup(
         uri=os.getenv("NEO4J_URI", "bolt://localhost:7687"),
         user=os.getenv("NEO4J_USER", "neo4j"),

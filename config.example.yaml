@@ -14,7 +14,7 @@ embedding:
     dimensions: 1536
 
   ollama:
-    base_url: https://ollama.aga.my
+    base_url: http://localhost:11434
     model: nomic-embed-text
     dimensions: 768
 

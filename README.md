@@ -75,7 +75,7 @@ Via `.env` or environment variables:
 | `EMBEDDING_PROVIDER` | `openai` | `openai` or `ollama` |
 | `OPENAI_API_KEY` | — | OpenAI API key |
 | `OPENAI_EMBEDDING_MODEL` | `text-embedding-3-small` | OpenAI model |
-| `OLLAMA_BASE_URL` | `https://ollama.aga.my` | Ollama endpoint |
+| `OLLAMA_BASE_URL` | `http://localhost:11434` | Ollama endpoint |
 | `OLLAMA_EMBEDDING_MODEL` | `nomic-embed-text` | Ollama model |
 
 ## Architecture

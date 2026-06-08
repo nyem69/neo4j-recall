@@ -76,7 +76,7 @@ def dimensions(provider: Optional[str] = None) -> int:
 
 if __name__ == "__main__":
     from dotenv import load_dotenv
-    load_dotenv()
+    load_dotenv(override=True)
     vecs = embed(["test memory about Malaysian politics"])
     print(f"Provider: {os.getenv('EMBEDDING_PROVIDER', 'openai')}")
     print(f"Dimensions: {len(vecs[0])}")
